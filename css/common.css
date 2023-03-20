@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Sen';
+}
+
+:root {
+    /* Color Palette */
+    --base-color: #000000;
+    --sub-lvl-color: #181823;
+    --light-grey-color: #DEECF9;
+    --dark-grey-color: #C7E0F4;
+    --text-color: #ffffff;
+    --primary-color: #5221E6;
+    --green-accent-color: #3CC74E;
+    --pink-accent-color: #E95D90;
+    --peach-accent-color: #FFF3E4;
+    --violet-accent-color: #FBE4FF;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
