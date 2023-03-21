@@ -59,7 +59,11 @@ p {
 .container,
 [class*="__container"] {
     margin-left: auto;
+<<<<<<< HEAD
     margin-right: auto;
+=======
+    margin: auto;
+>>>>>>> 2c77b740c3865ef33ad43f99d5c04ed997aac5c4
 
     width: 22.5rem;
 
