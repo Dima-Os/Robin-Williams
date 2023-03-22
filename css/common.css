@@ -59,13 +59,9 @@ p {
 .container,
 [class*="__container"] {
     margin-left: auto;
-<<<<<<< HEAD
     margin-right: auto;
-=======
-    margin: auto;
->>>>>>> 2c77b740c3865ef33ad43f99d5c04ed997aac5c4
 
-    width: 22.5rem;
+    max-width: 22.5rem;
 
     padding-left: 20px;
     padding-right: 20px;
@@ -76,4 +72,40 @@ p {
     margin: 0;
 
     list-style-type: none;
+}
+
+.header {
+    padding-bottom: 3rem;
+}
+
+.site-heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.header-description {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+}
+
+@media screen and (min-width:768px) {
+
+    .container,
+    [class*="__container"] {
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 768px;
+
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .site-heading {
+        font-size: 56px;
+        line-height: 67px;
+    }
 }
