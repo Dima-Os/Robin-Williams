@@ -74,14 +74,12 @@ p {
     list-style-type: none;
 }
 
-.header {
-    padding-bottom: 3rem;
-}
+
 
 .site-heading {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 39px;
+    line-height: 2.4375rem;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -95,9 +93,6 @@ p {
 
     .container,
     [class*="__container"] {
-        margin-left: auto;
-        margin-right: auto;
-
         max-width: 768px;
 
         padding-left: 2.5rem;
@@ -105,7 +100,24 @@ p {
     }
 
     .site-heading {
-        font-size: 56px;
-        line-height: 67px;
+        font-size: 3.5rem;
+        line-height: 4.1875rem;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+
+    .container,
+    [class*="__container"] {
+        max-width: 1440px;
+
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+
+    .site-heading {
+        font-size: 4.875rem;
+        line-height: 5.875rem;
     }
 }
