@@ -12,7 +12,7 @@ html {
     /* Color Palette */
     --base-color: #000000;
     --sub-lvl-color: #181823;
-    --light-grey-color: #DEECF9;
+    --light-grey-color: #8491A0;
     --dark-grey-color: #C7E0F4;
     --text-color: #ffffff;
     --primary-color: #5221E6;
@@ -37,6 +37,7 @@ img {
 h1,
 h2,
 h3,
+h4,
 p {
     padding: 0;
     margin: 0;
@@ -74,8 +75,7 @@ p {
     list-style-type: none;
 }
 
-
-
+/* -----HEADER----- */
 .site-heading {
     font-size: 2rem;
     font-weight: 700;
@@ -88,6 +88,59 @@ p {
     font-size: 1.125rem;
     line-height: 1.6875rem;
 }
+
+/* -----Section EXPERIENCE----- */
+.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section__heading {
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--light-grey-color);
+    text-transform: uppercase;
+}
+
+.section-description {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 38.5px;
+}
+
+.section-list {
+    counter-reset: items-counter;
+}
+
+.section-list__item::before {
+    counter-increment: items-counter;
+    content: counter(items-counter, decimal-leading-zero);
+
+    font-size: 7.3125rem;
+    line-height: 8.8125rem;
+
+    color: var(--dark-grey-color);
+}
+
+.section-list__heading {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.section-list__highlight_color_green {
+    color: var(--green-accent-color);
+}
+
+.section-list__highlight_color_blue {
+    color: var(--primary-color);
+}
+
+.section-list__highlight_color_pink {
+    color: var(--pink-accent-color);
+}
+
+
 
 @media screen and (min-width:768px) {
 
