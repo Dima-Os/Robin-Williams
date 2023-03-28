@@ -19,11 +19,18 @@
     line-height: 1.5rem;
 }
 
+.section-link {
+    margin-bottom: 0.1875rem;
+}
+
+.section__link-wrp {
+    width: max-content;
+}
+
 @media screen and (max-width:767px) {
     .section-list__item:not(:last-child) {
         margin-bottom: 2.5rem;
     }
-
 }
 
 @media screen and (min-width:768px) {
@@ -36,12 +43,18 @@
         margin-bottom: 1.5rem;
     }
 
-
+    .section__inner-wrp {
+        padding-right: 2.5rem;
+    }
 }
 
 @media screen and (min-width:1440px) {
     .section {
         padding-top: 7.5rem;
         padding-bottom: 7.5rem;
+    }
+
+    .section__inner-wrp {
+        padding-right: 4.5rem;
     }
 }

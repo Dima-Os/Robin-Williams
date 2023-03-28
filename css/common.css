@@ -99,7 +99,7 @@ p {
     text-transform: uppercase;
 }
 
-.section-description {
+.section__description {
     font-size: 2rem;
     font-weight: bold;
     line-height: 2.4063rem;
@@ -136,6 +136,35 @@ p {
     color: var(--pink-accent-color);
 }
 
+.section__definition {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    letter-spacing: 0em;
+}
+
+.section-link {
+    color: var(--light-grey-color);
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+
+.section-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.0625rem;
+    background-color: var(--light-grey-color);
+}
+
+.section__two-sided-content::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 @media screen and (min-width:768px) {
@@ -154,8 +183,7 @@ p {
         line-height: 4.1875rem;
     }
 
-    /* -----Section EXPERIENCE----- */
-
+    /* -----Section-----*/
 
     .section__description {
         font-size: 3.4375rem;
@@ -171,6 +199,16 @@ p {
         /* flex-grow: 1; */
         /* flex-basis: 0; */
         flex: 1;
+    }
+
+    .section__two-sided-content .section__inner-wrp {
+        width: 50%;
+    }
+
+    .section__two-sided-content::after {
+        width: 50%;
+        top: 0;
+        left: 50%;
     }
 }
 
