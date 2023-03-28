@@ -90,14 +90,10 @@ p {
 }
 
 /* -----Section EXPERIENCE----- */
-.section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
 
 .section__heading {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 
     color: var(--light-grey-color);
     text-transform: uppercase;
@@ -106,7 +102,7 @@ p {
 .section-description {
     font-size: 2rem;
     font-weight: bold;
-    line-height: 38.5px;
+    line-height: 2.4063rem;
 }
 
 .section-list {
@@ -124,8 +120,8 @@ p {
 }
 
 .section-list__heading {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
 }
 
 .section-list__highlight_color_green {
@@ -152,11 +148,30 @@ p {
         padding-right: 2.5rem;
     }
 
+    /* -----HEADER----- */
     .site-heading {
         font-size: 3.5rem;
         line-height: 4.1875rem;
     }
 
+    /* -----Section EXPERIENCE----- */
+
+
+    .section__description {
+        font-size: 3.4375rem;
+        line-height: 4.125rem;
+    }
+
+    .section-list {
+        display: flex;
+        column-gap: 1.5rem;
+    }
+
+    .section-list__item {
+        /* flex-grow: 1; */
+        /* flex-basis: 0; */
+        flex: 1;
+    }
 }
 
 @media screen and (min-width:1440px) {
@@ -173,4 +188,5 @@ p {
         font-size: 4.875rem;
         line-height: 5.875rem;
     }
+
 }
