@@ -1,0 +1,47 @@
+.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section__heading {
+    margin-bottom: 0.5rem;
+}
+
+.section__description {
+    margin-bottom: 2.5rem;
+}
+
+.section-list__heading {
+    margin-bottom: 1rem;
+}
+
+.section-list__description {
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width:767px) {
+    .section-list__item:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .section-list__heading {
+        margin-bottom: 1.5rem;
+    }
+
+
+}
+
+@media screen and (min-width:1440px) {
+    .section {
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+    }
+}
