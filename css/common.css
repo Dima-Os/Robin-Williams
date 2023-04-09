@@ -105,19 +105,6 @@ p {
     line-height: 2.4063rem;
 }
 
-.section-list {
-    counter-reset: items-counter;
-}
-
-.section-list__item::before {
-    counter-increment: items-counter;
-    content: counter(items-counter, decimal-leading-zero);
-
-    font-size: 7.3125rem;
-    line-height: 8.8125rem;
-
-    color: var(--dark-grey-color);
-}
 
 .section-list__heading {
     font-size: 1.5rem;
@@ -193,6 +180,7 @@ p {
     .section-list {
         display: flex;
         column-gap: 1.5rem;
+        flex-wrap: wrap;
     }
 
     .section-list__item {

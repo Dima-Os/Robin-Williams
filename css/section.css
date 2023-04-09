@@ -11,6 +11,20 @@
     margin-bottom: 2.5rem;
 }
 
+.section-list {
+    counter-reset: items-counter;
+}
+
+.experience-list__item::before {
+    counter-increment: items-counter;
+    content: counter(items-counter, decimal-leading-zero);
+
+    font-size: 7.3125rem;
+    line-height: 8.8125rem;
+
+    color: var(--dark-grey-color);
+}
+
 .section-list__heading {
     margin-bottom: 1rem;
 }

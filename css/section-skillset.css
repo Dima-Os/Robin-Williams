@@ -1,0 +1,77 @@
+.skillset__definition {
+    margin-bottom: 3.75rem;
+    color: var(--light-grey-color);
+}
+
+
+
+
+
+.skillset-list__item::before {
+    content: "";
+    display: block;
+
+    width: 2rem;
+    height: 2rem;
+
+    margin-bottom: 1.5rem;
+
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.skillset-list__description {
+    color: var(--light-grey-color);
+}
+
+.skillset-list__item_ico_product-design::before {
+    background-image: url(../img/ico/product-design.svg);
+}
+
+.skillset-list__item_ico_visual-design::before {
+    background-image: url(../img/ico/visual-design.svg);
+}
+
+.skillset-list__item_ico_motion-design::before {
+    background-image: url(../img/ico/motion-design.svg);
+}
+
+.skillset-list__item_ico_photography::before {
+    background-image: url(../img/ico/photography.svg);
+}
+
+@media screen and (max-width:47.9375rem) {
+    .section__skillset {
+        padding-top: calc(3rem + 28.9375rem);
+    }
+
+    .skillset-list__item:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:48rem) {
+    .skillset-list__item {
+        flex-basis: 20.125rem;
+    }
+
+    .skillset-list__item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:90rem) {
+    .section__skillset {
+        display: flex;
+
+        column-gap: 1.5rem;
+    }
+
+    .skillset__content {
+        flex: 1;
+    }
+
+    .skillset-list {
+        flex: 2;
+    }
+}
