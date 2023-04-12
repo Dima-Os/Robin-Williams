@@ -6,7 +6,7 @@
 }
 
 .companies-list__item {
-    flex: 1 0 180px;
+    flex: 1 0 50%;
 }
 
 .companies-list__link {
@@ -43,4 +43,10 @@
 
 .w {
     background-image: url(../img/companies-logo/w.svg);
+}
+
+@media screen and (min-width:1440px) {
+    .companies-list__item {
+        flex-basis: calc(100% / 6);
+    }
 }
