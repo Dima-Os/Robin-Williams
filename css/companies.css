@@ -1,0 +1,46 @@
+.companies-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+.companies-list__item {
+    flex: 1 0 180px;
+}
+
+.companies-list__link {
+    display: block;
+
+    height: 8.75rem;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border: 1px solid #181823;
+    cursor: pointer;
+}
+
+.cbre {
+    background-image: url(../img/companies-logo/cbre.svg);
+}
+
+.epiq {
+    background-image: url(../img/companies-logo/epiq.svg);
+}
+
+.f {
+    background-image: url(../img/companies-logo/f.svg);
+}
+
+.leaf {
+    background-image: url(../img/companies-logo/leaf.svg);
+}
+
+.a_place_for_mom {
+    background-image: url(../img/companies-logo/a_place_for_mom.svg);
+}
+
+.w {
+    background-image: url(../img/companies-logo/w.svg);
+}
