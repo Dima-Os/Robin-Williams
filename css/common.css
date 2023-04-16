@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-    /* Color Palette */
+    /* Color Palette  */
     --base-color: #000000;
     --sub-lvl-color: #181823;
     --light-grey-color: #8491A0;
@@ -28,7 +28,8 @@ html {
     box-sizing: inherit;
 }
 
-img {
+img,
+picture {
     display: block;
     max-width: 100%;
     height: auto;

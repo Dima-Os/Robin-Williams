@@ -1,0 +1,48 @@
+.projects__description {
+    margin-bottom: 5rem;
+}
+
+.projects-list__item {
+    background-color: var(--sub-lvl-color);
+}
+
+.project-list__content {
+    padding: 2.5rem 2rem;
+}
+
+
+
+.project-list__caption {
+
+    margin-bottom: 0.8125rem;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+
+.project-list__description {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@media screen and (max-width:767px) {
+    .projects-list__item:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .projects-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+
+    .projects-list__item {
+        flex-basis: 39.75rem;
+    }
+}
