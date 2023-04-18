@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-    /* Color Palette */
+    /* Color Palette  */
     --base-color: #000000;
     --sub-lvl-color: #181823;
     --light-grey-color: #8491A0;
@@ -28,7 +28,8 @@ html {
     box-sizing: inherit;
 }
 
-img {
+img,
+picture {
     display: block;
     max-width: 100%;
     height: auto;
@@ -153,6 +154,30 @@ p {
     background-size: cover;
 }
 
+.view-all-btn {
+    border: 1px solid var(--primary-color);
+    background: transparent;
+
+    padding: 1.5em 2em;
+
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.6875rem;
+
+    color: inherit;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: border 300ms ease-in-out, font-size 300ms ease-in-out;
+}
+
+.view-all-btn:hover {
+    border-width: 5px;
+    font-size: 25px;
+}
+
+
 
 @media screen and (min-width:768px) {
 
@@ -198,6 +223,8 @@ p {
         top: 0;
         left: 50%;
     }
+
+
 }
 
 @media screen and (min-width:1440px) {

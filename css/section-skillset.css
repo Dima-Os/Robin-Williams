@@ -3,10 +3,6 @@
     color: var(--light-grey-color);
 }
 
-
-
-
-
 .skillset-list__item::before {
     content: "";
     display: block;
