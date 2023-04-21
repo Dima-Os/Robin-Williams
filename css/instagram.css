@@ -1,0 +1,27 @@
+.section__instagram {
+    background-color: var(--violet-accent-color);
+}
+
+
+@media screen and (max-width:767px) {
+    .section__instagram::after {
+        background-image: url(../img/instagram-bg-m.jpg);
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .section__instagram::after {
+        background-image: url(../img/instagram-bg-t.jpg);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .instagram__definition {
+        margin-bottom: 8.375rem;
+    }
+
+    .section__instagram::after {
+        background-image: url(../img/instagram-bg-d.jpg);
+    }
+}

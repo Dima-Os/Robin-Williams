@@ -1,17 +1,11 @@
 .section__philosophy {
     background-color: var(--peach-accent-color);
-    position: relative;
 }
 
 .philosophy__description {
-    margin-bottom: 1.5rem;
     color: var(--sub-lvl-color);
 }
 
-.philosophy__definition {
-    margin-bottom: 5.625rem;
-    color: #5B6876;
-}
 
 @media screen and (max-width:767px) {
     .section__philosophy::after {
@@ -20,9 +14,6 @@
 }
 
 @media screen and (min-width:768px) {
-    .philosophy__definition {
-        margin-bottom: 4.1875rem;
-    }
 
     .section__philosophy::after {
         background-image: url(../img/philosophy-bg-t.jpg);
@@ -30,10 +21,6 @@
 }
 
 @media screen and (min-width:1440px) {
-    .philosophy__definition {
-        margin-bottom: 8.375rem;
-    }
-
     .section__philosophy::after {
         background-image: url(../img/philosophy-bg-d.jpg);
     }
